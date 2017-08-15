@@ -1,0 +1,817 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Times,serif;font-size:37.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Times,serif;font-size:37.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Times,serif;font-size:19.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Times,serif;font-size:19.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Times,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Times,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_006{font-family:Times,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:23.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:23.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Times,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Times,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Times,serif;font-size:43.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Times,serif;font-size:43.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Times,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Times,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Times,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Times,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Times,serif;font-size:29.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Times,serif;font-size:29.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Times,serif;font-size:3.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Times,serif;font-size:3.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Times,serif;font-size:49.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Times,serif;font-size:49.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Times,serif;font-size:26.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Times,serif;font-size:26.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Times,serif;font-size:25.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Times,serif;font-size:25.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Times,serif;font-size:64.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Times,serif;font-size:64.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Times,serif;font-size:42.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Times,serif;font-size:42.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Times,serif;font-size:86.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Times,serif;font-size:86.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Times,serif;font-size:41.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Times,serif;font-size:41.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Times,serif;font-size:26.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Times,serif;font-size:26.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_037{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_039{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_039{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_038{font-family:Times,serif;font-size:25.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Times,serif;font-size:25.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_040{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Times,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Times,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Times,serif;font-size:32.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Times,serif;font-size:32.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Times,serif;font-size:31.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Times,serif;font-size:31.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Times,serif;font-size:27.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Times,serif;font-size:27.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Times,serif;font-size:21.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Times,serif;font-size:21.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Times,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Times,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Times,serif;font-size:27.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_050{font-family:Times,serif;font-size:27.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_051{font-family:Times,serif;font-size:2.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_051{font-family:Times,serif;font-size:2.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_052{font-family:Times,serif;font-size:58.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_052{font-family:Times,serif;font-size:58.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_053{font-family:Times,serif;font-size:28.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_053{font-family:Times,serif;font-size:28.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_054{font-family:Times,serif;font-size:30.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_054{font-family:Times,serif;font-size:30.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_055{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_055{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_056{font-family:Times,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_056{font-family:Times,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_059{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_059{font-family:Times,serif;font-size:4.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_058{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_058{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_057{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_057{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_061{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_061{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_062{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_062{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_063{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_063{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_060{font-family:Times,serif;font-size:29.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_060{font-family:Times,serif;font-size:29.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_064{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_064{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_065{font-family:Times,serif;font-size:38.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_065{font-family:Times,serif;font-size:38.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_066{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_066{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_067{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_067{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_068{font-family:Times,serif;font-size:75.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_068{font-family:Times,serif;font-size:75.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-480px;top:0px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:314.16px;top:463.44px" class="cls_002"><span class="cls_002">it:</span></div>
+<div style="position:absolute;left:353.04px;top:463.44px" class="cls_002"><span class="cls_002">157-3070-2515</span></div>
+<div style="position:absolute;left:556.32px;top:464.64px" class="cls_002"><span class="cls_002">IIIIM: echolee43@foxmail.com</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:550px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:392.16px;top:0.00px" class="cls_003"><span class="cls_003">IP  ii   ii</span></div>
+<div style="position:absolute;left:394.32px;top:33.80px" class="cls_003"><span class="cls_003">Contents</span></div>
+<div style="position:absolute;left:646.80px;top:216.00px" class="cls_002"><span class="cls_002">03</span></div>
+<div style="position:absolute;left:432.72px;top:329.04px" class="cls_002"><span class="cls_002">APPAW,t</span></div>
+<div style="position:absolute;left:654.48px;top:329.76px" class="cls_002"><span class="cls_002">WebAia-it</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:1100px;width:960px;height:540px;border-style:outset;overflow:hidden">
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:1100px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:568.80px;top:131.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:568.80px;top:131.00px" class="cls_004"><span class="cls_004">V</span></div>
+<div style="position:absolute;left:595.20px;top:131.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:595.20px;top:131.00px" class="cls_004"><span class="cls_004">C</span></div>
+<div style="position:absolute;left:613.20px;top:130.76px" class="cls_004"><span class="cls_004">4</span></div>
+<div style="position:absolute;left:519.60px;top:165.08px" class="cls_004"><span class="cls_004">1</span></div>
+<div style="position:absolute;left:519.60px;top:165.08px" class="cls_004"><span class="cls_004">,</span></div>
+<div style="position:absolute;left:522.24px;top:165.08px" class="cls_004"><span class="cls_004">4)] :</span></div>
+<div style="position:absolute;left:568.80px;top:164.60px" class="cls_004"><span class="cls_004">1996.03</span></div>
+<div style="position:absolute;left:570.48px;top:231.44px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:580.32px;top:233.72px" class="cls_004"><span class="cls_004">57307025 1 </span><span class="cls_002">5</span></div>
+<div style="position:absolute;left:567.84px;top:268.80px" class="cls_002"><span class="cls_002">echolee43@foxmail.com</span></div>
+<div style="position:absolute;left:530.16px;top:303.68px" class="cls_005"><span class="cls_005">T :</span><span class="cls_006">Fal</span><span class="cls_005"> </span><span class="cls_006">l</span><span class="cls_005">Mk</span></div>
+<div style="position:absolute;left:699.12px;top:303.44px" class="cls_005"><span class="cls_005">1E-.</span></div>
+<div style="position:absolute;left:801.84px;top:302.20px" class="cls_007"><span class="cls_007">M</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:1650px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:42.72px;top:42.92px" class="cls_004"><span class="cls_004">02</span></div>
+<div style="position:absolute;left:96.96px;top:43.88px" class="cls_004"><span class="cls_004">lfii% H gl)TJ</span></div>
+<div style="position:absolute;left:127.92px;top:160.08px" class="cls_008"><span class="cls_008">2017.03-g'14</span></div>
+<div style="position:absolute;left:271.68px;top:160.32px" class="cls_008"><span class="cls_008">2016.03-2017.04</span></div>
+<div style="position:absolute;left:425.52px;top:160.32px" class="cls_008"><span class="cls_008">2016.12-2017.03</span></div>
+<div style="position:absolute;left:580.80px;top:160.32px" class="cls_008"><span class="cls_008">2016.08-2016.09</span></div>
+<div style="position:absolute;left:732.48px;top:160.32px" class="cls_008"><span class="cls_008">2015.09</span></div>
+<div style="position:absolute;left:782.88px;top:160.32px" class="cls_008"><span class="cls_008">-2016.03</span></div>
+<div style="position:absolute;left:163.68px;top:185.28px" class="cls_008"><span class="cls_008">41,</span></div>
+<div style="position:absolute;left:177.60px;top:185.28px" class="cls_008"><span class="cls_008">-</span></div>
+<div style="position:absolute;left:309.12px;top:181.92px" class="cls_008"><span class="cls_008">-0-</span></div>
+<div style="position:absolute;left:782.16px;top:184.80px" class="cls_008"><span class="cls_008">•</span></div>
+<div style="position:absolute;left:137.04px;top:208.88px" class="cls_009"><span class="cls_009">INScAPP</span></div>
+<div style="position:absolute;left:278.88px;top:211.04px" class="cls_009"><span class="cls_009">YT—-±)1R</span></div>
+<div style="position:absolute;left:338.40px;top:211.04px" class="cls_009"><span class="cls_009">.I.V.21</span></div>
+<div style="position:absolute;left:433.92px;top:208.32px" class="cls_002"><span class="cls_002">130WYR.HOP</span></div>
+<div style="position:absolute;left:743.76px;top:210.08px" class="cls_009"><span class="cls_009">rriVrtL</span></div>
+<div style="position:absolute;left:805.44px;top:208.88px" class="cls_009"><span class="cls_009">APP</span></div>
+<div style="position:absolute;left:297.84px;top:228.92px" class="cls_004"><span class="cls_004">1</span></div>
+<div style="position:absolute;left:298.56px;top:228.68px" class="cls_004"><span class="cls_004">'$1_1</span></div>
+<div style="position:absolute;left:335.04px;top:228.44px" class="cls_004"><span class="cls_004">,..%</span></div>
+<div style="position:absolute;left:433.20px;top:228.44px" class="cls_004"><span class="cls_004">11,20.11</span></div>
+<div style="position:absolute;left:511.20px;top:229.16px" class="cls_004"><span class="cls_004">z14</span></div>
+<div style="position:absolute;left:588.48px;top:228.68px" class="cls_004"><span class="cls_004">MWill 't-,M</span></div>
+<div style="position:absolute;left:120.00px;top:351.56px" class="cls_004"><span class="cls_004">0,P,15.1±:e4,t,A</span></div>
+<div style="position:absolute;left:274.56px;top:352.28px" class="cls_004"><span class="cls_004">nro.,-Ri-f-fg A</span></div>
+<div style="position:absolute;left:422.64px;top:352.28px" class="cls_004"><span class="cls_004">Pi13</span></div>
+<div style="position:absolute;left:451.44px;top:352.04px" class="cls_004"><span class="cls_004">,L,M.Z,V,i..9.i-F</span></div>
+<div style="position:absolute;left:582.24px;top:350.84px" class="cls_004"><span class="cls_004">0,2ii-1,M,tA</span></div>
+<div style="position:absolute;left:738.72px;top:352.28px" class="cls_004"><span class="cls_004">41A1,gViLi-Mti.A</span></div>
+<div style="position:absolute;left:120.00px;top:376.04px" class="cls_004"><span class="cls_004">515-1,ff:I#A</span></div>
+<div style="position:absolute;left:739.44px;top:376.76px" class="cls_004"><span class="cls_004">57.\, ili-i-M.&.A</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:2200px;width:960px;height:540px;border-style:outset;overflow:hidden">
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:2200px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:188.40px;top:60.48px" class="cls_010"><span class="cls_010">WO IX A P P</span></div>
+<div style="position:absolute;left:188.40px;top:104.12px" class="cls_004"><span class="cls_004">—V.,  T,TL,,VIT111-11L</span></div>
+<div style="position:absolute;left:360.00px;top:104.12px" class="cls_004"><span class="cls_004">, Ciqqi.;.5'.,</span></div>
+<div style="position:absolute;left:467.52px;top:104.12px" class="cls_004"><span class="cls_004">.fTIWNqi...5-\,.</span></div>
+<div style="position:absolute;left:560.16px;top:104.12px" class="cls_004"><span class="cls_004">-ai RilktilnL,*L3/'jVAppc,</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:2750px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:26.64px;top:23.28px" class="cls_010"><span class="cls_010">• UNEz.Z'qi</span></div>
+<div style="position:absolute;left:658.08px;top:167.36px" class="cls_005"><span class="cls_005">ti+,,,vnAmomerinza</span></div>
+<div style="position:absolute;left:658.08px;top:189.92px" class="cls_005"><span class="cls_005">ingivgatticARMIR-.</span></div>
+<div style="position:absolute;left:656.16px;top:264.68px" class="cls_012"><span class="cls_012">111</span></div>
+<div style="position:absolute;left:742.56px;top:385.24px" class="cls_013"><span class="cls_013">Mfl,tNIMJ6</span></div>
+<div style="position:absolute;left:234.00px;top:404.36px" class="cls_011"><span class="cls_011">EriAPPbVVri4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:3300px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:658.08px;top:79.24px" class="cls_014"><span class="cls_014">ZiEMA</span></div>
+<div style="position:absolute;left:330.72px;top:84.04px" class="cls_014"><span class="cls_014">1:71K1t,</span></div>
+<div style="position:absolute;left:359.52px;top:84.04px" class="cls_014"><span class="cls_014">M</span></div>
+<div style="position:absolute;left:375.60px;top:84.04px" class="cls_014"><span class="cls_014">iti</span></div>
+<div style="position:absolute;left:658.08px;top:101.80px" class="cls_014"><span class="cls_014">&Vt(,''</span></div>
+<div style="position:absolute;left:727.44px;top:101.80px" class="cls_014"><span class="cls_014">IIREI</span></div>
+<div style="position:absolute;left:179.04px;top:151.48px" class="cls_014"><span class="cls_014">RE.,In1Rn</span></div>
+<div style="position:absolute;left:179.04px;top:174.04px" class="cls_014"><span class="cls_014">NarIcrartA</span></div>
+<div style="position:absolute;left:686.88px;top:200.68px" class="cls_014"><span class="cls_014">'AE2IKIEB</span></div>
+<div style="position:absolute;left:768.96px;top:211.96px" class="cls_014"><span class="cls_014">)11)=1</span></div>
+<div style="position:absolute;left:236.64px;top:216.76px" class="cls_014"><span class="cls_014">VEINAAMIE3</span></div>
+<div style="position:absolute;left:751.44px;top:234.28px" class="cls_014"><span class="cls_014">lx)PJA</span></div>
+<div style="position:absolute;left:681.12px;top:256.84px" class="cls_014"><span class="cls_014">tiOftt</span></div>
+<div style="position:absolute;left:752.88px;top:256.84px" class="cls_014"><span class="cls_014">nn*</span></div>
+<div style="position:absolute;left:681.12px;top:279.16px" class="cls_014"><span class="cls_014">WO*</span></div>
+<div style="position:absolute;left:699.36px;top:301.00px" class="cls_014"><span class="cls_014">iP_A o</span></div>
+<div style="position:absolute;left:759.84px;top:301.72px" class="cls_014"><span class="cls_014">,fi-M*</span></div>
+<div style="position:absolute;left:681.12px;top:324.28px" class="cls_014"><span class="cls_014">1</span></div>
+<div style="position:absolute;left:728.16px;top:324.28px" class="cls_014"><span class="cls_014">e</span></div>
+<div style="position:absolute;left:599.04px;top:347.64px" class="cls_015"><span class="cls_015">-Ji-A51=1)b</span></div>
+<div style="position:absolute;left:750.72px;top:388.48px" class="cls_016"><span class="cls_016">rAPffi-a</span></div>
+<div style="position:absolute;left:728.16px;top:433.36px" class="cls_016"><span class="cls_016">e  atdoA</span></div>
+<div style="position:absolute;left:820.08px;top:433.36px" class="cls_016"><span class="cls_016">maim</span></div>
+<div style="position:absolute;left:681.84px;top:459.92px" class="cls_017"><span class="cls_017">.KM</span></div>
+<div style="position:absolute;left:732.48px;top:459.92px" class="cls_017"><span class="cls_017">ITAfq</span></div>
+<div style="position:absolute;left:690.24px;top:481.48px" class="cls_014"><span class="cls_014">i</span></div>
+<div style="position:absolute;left:690.24px;top:481.48px" class="cls_014"><span class="cls_014">t</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:3850px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:63.36px;top:29.72px" class="cls_004"><span class="cls_004">ICON1R-11-</span></div>
+<div style="position:absolute;left:167.28px;top:249.32px" class="cls_004"><span class="cls_004">EgitEITI:11-1WWIS</span></div>
+<div style="position:absolute;left:425.28px;top:238.12px" class="cls_018"><span class="cls_018">faaainonitm</span></div>
+<div style="position:absolute;left:611.28px;top:343.84px" class="cls_016"><span class="cls_016">APPS,' DDE</span></div>
+<div style="position:absolute;left:198.96px;top:364.60px" class="cls_013"><span class="cls_013">14.8.ErfAPP±{A.</span></div>
+<div style="position:absolute;left:692.16px;top:365.92px" class="cls_016"><span class="cls_016">4ii</span></div>
+<div style="position:absolute;left:734.40px;top:364.96px" class="cls_016"><span class="cls_016">*ndit)=E711</span></div>
+<div style="position:absolute;left:833.52px;top:364.72px" class="cls_016"><span class="cls_016">t</span></div>
+<div style="position:absolute;left:114.48px;top:385.24px" class="cls_013"><span class="cls_013">JEOXVOARtiWORRF67_E,"4".</span></div>
+<div style="position:absolute;left:780.72px;top:383.56px" class="cls_013"><span class="cls_013">1Wit,ffind</span></div>
+<div style="position:absolute;left:611.52px;top:426.28px" class="cls_013"><span class="cls_013">ilN119K.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:4400px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:684.96px;top:32.60px" class="cls_004"><span class="cls_004">afilitagaVIS</span></div>
+<div style="position:absolute;left:76.08px;top:51.56px" class="cls_003"><span class="cls_003">0</span></div>
+<div style="position:absolute;left:444.48px;top:94.20px" class="cls_021"><span class="cls_021">•</span></div>
+<div style="position:absolute;left:711.84px;top:83.76px" class="cls_002"><span class="cls_002">p</span></div>
+<div style="position:absolute;left:671.04px;top:128.76px" class="cls_025"><span class="cls_025">D</span></div>
+<div style="position:absolute;left:674.16px;top:128.76px" class="cls_025"><span class="cls_025">O</span></div>
+<div style="position:absolute;left:681.60px;top:128.76px" class="cls_025"><span class="cls_025">Et5</span></div>
+<div style="position:absolute;left:686.64px;top:128.76px" class="cls_025"><span class="cls_025">a</span></div>
+<div style="position:absolute;left:692.88px;top:128.52px" class="cls_025"><span class="cls_025">B11</span></div>
+<div style="position:absolute;left:704.16px;top:127.08px" class="cls_025"><span class="cls_025">r</span></div>
+<div style="position:absolute;left:734.40px;top:125.00px" class="cls_019"><span class="cls_019">4:21 PM</span></div>
+<div style="position:absolute;left:800.40px;top:124.76px" class="cls_019"><span class="cls_019">* 22%</span></div>
+<div style="position:absolute;left:825.60px;top:124.76px" class="cls_019"><span class="cls_019">C</span></div>
+<div style="position:absolute;left:838.80px;top:124.76px" class="cls_019"><span class="cls_019">o</span></div>
+<div style="position:absolute;left:198.48px;top:128.60px" class="cls_019"><span class="cls_019">4:21 PM</span></div>
+<div style="position:absolute;left:264.24px;top:128.84px" class="cls_019"><span class="cls_019">* 22%</span></div>
+<div style="position:absolute;left:288.72px;top:129.84px" class="cls_020"><span class="cls_020">I</span></div>
+<div style="position:absolute;left:390.96px;top:126.96px" class="cls_022"><span class="cls_022">••.:</span></div>
+<div style="position:absolute;left:467.28px;top:126.44px" class="cls_019"><span class="cls_019">4:21 PM</span></div>
+<div style="position:absolute;left:532.32px;top:126.68px" class="cls_019"><span class="cls_019">* 22% i</span></div>
+<div style="position:absolute;left:560.64px;top:126.68px" class="cls_019"><span class="cls_019">=</span></div>
+<div style="position:absolute;left:403.92px;top:183.60px" class="cls_010"><span class="cls_010">ODE</span></div>
+<div style="position:absolute;left:415.44px;top:178.04px" class="cls_023"><span class="cls_023">...,,,</span></div>
+<div style="position:absolute;left:475.44px;top:177.80px" class="cls_023"><span class="cls_023">,,,</span></div>
+<div style="position:absolute;left:508.56px;top:177.56px" class="cls_023"><span class="cls_023">,</span></div>
+<div style="position:absolute;left:802.80px;top:273.28px" class="cls_026"><span class="cls_026">0</span></div>
+<div style="position:absolute;left:772.56px;top:284.32px" class="cls_026"><span class="cls_026">k (woman)</span></div>
+<div style="position:absolute;left:731.28px;top:307.88px" class="cls_019"><span class="cls_019">ilkaWitil El</span></div>
+<div style="position:absolute;left:695.28px;top:323.00px" class="cls_027"><span class="cls_027">1995</span></div>
+<div style="position:absolute;left:745.20px;top:322.52px" class="cls_027"><span class="cls_027">02</span></div>
+<div style="position:absolute;left:792.48px;top:323.00px" class="cls_027"><span class="cls_027">26</span></div>
+<div style="position:absolute;left:694.56px;top:339.08px" class="cls_027"><span class="cls_027">:996</span></div>
+<div style="position:absolute;left:745.44px;top:338.84px" class="cls_027"><span class="cls_027">03</span></div>
+<div style="position:absolute;left:793.44px;top:338.36px" class="cls_027"><span class="cls_027">27</span></div>
+<div style="position:absolute;left:695.52px;top:353.48px" class="cls_027"><span class="cls_027">i997</span></div>
+<div style="position:absolute;left:746.16px;top:353.48px" class="cls_027"><span class="cls_027">01</span></div>
+<div style="position:absolute;left:793.44px;top:353.72px" class="cls_027"><span class="cls_027">28</span></div>
+<div style="position:absolute;left:215.28px;top:394.64px" class="cls_017"><span class="cls_017">g</span></div>
+<div style="position:absolute;left:737.04px;top:399.92px" class="cls_017"><span class="cls_017">T -</span></div>
+<div style="position:absolute;left:518.64px;top:429.40px" class="cls_024"><span class="cls_024">i2 f:J</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:4950px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:28.08px;top:23.72px" class="cls_028"><span class="cls_028">4 </span><span class="cls_029">  A iztiC.,‘</span></div>
+<div style="position:absolute;left:862.80px;top:120.28px" class="cls_007"><span class="cls_007">0</span></div>
+<div style="position:absolute;left:770.64px;top:103.76px" class="cls_030"><span class="cls_030">[</span></div>
+<div style="position:absolute;left:846.48px;top:151.00px" class="cls_013"><span class="cls_013">00</span><span class="cls_009">0-</span></div>
+<div style="position:absolute;left:671.28px;top:203.56px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:779.04px;top:279.32px" class="cls_004"><span class="cls_004">,</span></div>
+<div style="position:absolute;left:768.48px;top:265.92px" class="cls_031"><span class="cls_031">I</span></div>
+<div style="position:absolute;left:799.44px;top:288.20px" class="cls_004"><span class="cls_004">J</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:5500px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:208.56px;top:91.36px" class="cls_032"><span class="cls_032">•</span></div>
+<div style="position:absolute;left:170.64px;top:100.40px" class="cls_009"><span class="cls_009">•</span></div>
+<div style="position:absolute;left:112.08px;top:142.12px" class="cls_033"><span class="cls_033">64,06 1:13•14F411'?"</span></div>
+<div style="position:absolute;left:195.84px;top:140.80px" class="cls_026"><span class="cls_026">4:21 PM</span></div>
+<div style="position:absolute;left:268.32px;top:141.04px" class="cls_026"><span class="cls_026">* 22%</span></div>
+<div style="position:absolute;left:296.40px;top:141.04px" class="cls_026"><span class="cls_026">C</span></div>
+<div style="position:absolute;left:310.56px;top:141.04px" class="cls_026"><span class="cls_026">I,</span></div>
+<div style="position:absolute;left:114.96px;top:161.56px" class="cls_014"><span class="cls_014">a</span></div>
+<div style="position:absolute;left:192.96px;top:157.48px" class="cls_014"><span class="cls_014">DDff±</span></div>
+<div style="position:absolute;left:489.12px;top:220.68px" class="cls_015"><span class="cls_015">T</span></div>
+<div style="position:absolute;left:489.84px;top:220.68px" class="cls_015"><span class="cls_015">IEA A</span></div>
+<div style="position:absolute;left:552.48px;top:220.68px" class="cls_015"><span class="cls_015">i=1*.f4E11</span></div>
+<div style="position:absolute;left:413.04px;top:237.24px" class="cls_015"><span class="cls_015">IPS</span></div>
+<div style="position:absolute;left:476.40px;top:237.24px" class="cls_015"><span class="cls_015">aTliA</span></div>
+<div style="position:absolute;left:505.20px;top:237.48px" class="cls_015"><span class="cls_015">v</span></div>
+<div style="position:absolute;left:539.04px;top:237.48px" class="cls_015"><span class="cls_015">-WilP%1:16</span></div>
+<div style="position:absolute;left:257.52px;top:174.40px" class="cls_034"><span class="cls_034">el)</span></div>
+<div style="position:absolute;left:777.60px;top:265.24px" class="cls_035"><span class="cls_035">IL</span></div>
+<div style="position:absolute;left:689.52px;top:316.76px" class="cls_011"><span class="cls_011">.1?±"tP</span></div>
+<div style="position:absolute;left:748.08px;top:317.72px" class="cls_011"><span class="cls_011">1</span></div>
+<div style="position:absolute;left:771.84px;top:317.24px" class="cls_011"><span class="cls_011">1kg</span></div>
+<div style="position:absolute;left:381.12px;top:356.76px" class="cls_015"><span class="cls_015">Ajit±rnTIFEA5Z12</span></div>
+<div style="position:absolute;left:381.84px;top:409.32px" class="cls_015"><span class="cls_015">EattmlEmt:Pctia  WIT=1</span></div>
+<div style="position:absolute;left:507.84px;top:425.88px" class="cls_015"><span class="cls_015">TFO71-1*</span></div>
+<div style="position:absolute;left:380.88px;top:442.92px" class="cls_015"><span class="cls_015">iMf1=1S-lirt5011</span></div>
+<div style="position:absolute;left:475.20px;top:443.16px" class="cls_015"><span class="cls_015">M</span></div>
+<div style="position:absolute;left:497.04px;top:443.64px" class="cls_015"><span class="cls_015">F•</span></div>
+<div style="position:absolute;left:519.60px;top:442.92px" class="cls_015"><span class="cls_015">)1A_Lgt</span></div>
+<div style="position:absolute;left:482.16px;top:460.20px" class="cls_015"><span class="cls_015">-</span></div>
+<div style="position:absolute;left:482.16px;top:460.20px" class="cls_015"><span class="cls_015">q</span></div>
+<div style="position:absolute;left:485.76px;top:460.20px" class="cls_015"><span class="cls_015">4AWAITA&</span></div>
+<div style="position:absolute;left:167.76px;top:468.20px" class="cls_011"><span class="cls_011">PTalintfLAINFollfel</span></div>
+<div style="position:absolute;left:380.88px;top:475.80px" class="cls_015"><span class="cls_015">EnA:175,13,</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:6050px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:549.84px;top:58.00px" class="cls_028"><span class="cls_028">•</span></div>
+<div style="position:absolute;left:603.12px;top:56.56px" class="cls_036"><span class="cls_036">-1,t,T.g</span></div>
+<div style="position:absolute;left:452.88px;top:83.44px" class="cls_036"><span class="cls_036">MFOi 4A</span></div>
+<div style="position:absolute;left:583.44px;top:83.44px" class="cls_036"><span class="cls_036">r44*1411</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-270px;top:6600px;width:540px;height:960px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:69.60px;top:4.88px" class="cls_017"><span class="cls_017">V</span></div>
+<div style="position:absolute;left:214.56px;top:315.36px" class="cls_037"><span class="cls_037">4 </span><span class="cls_020">\</span></div>
+<div style="position:absolute;left:5.04px;top:486.40px" class="cls_032"><span class="cls_032">(</span></div>
+<div style="position:absolute;left:26.64px;top:486.40px" class="cls_032"><span class="cls_032">;)</span></div>
+<div style="position:absolute;left:375.36px;top:598.84px" class="cls_013"><span class="cls_013">)</span></div>
+<div style="position:absolute;left:376.80px;top:598.84px" class="cls_013"><span class="cls_013">i..</span></div>
+<div style="position:absolute;left:406.32px;top:599.56px" class="cls_013"><span class="cls_013">4'</span></div>
+<div style="position:absolute;left:343.20px;top:613.96px" class="cls_013"><span class="cls_013">0</span></div>
+<div style="position:absolute;left:378.24px;top:614.68px" class="cls_039"><span class="cls_039">4</span></div>
+<div style="position:absolute;left:411.36px;top:615.64px" class="cls_013"><span class="cls_013">0</span></div>
+<div style="position:absolute;left:346.56px;top:618.52px" class="cls_013"><span class="cls_013">OA</span></div>
+<div style="position:absolute;left:385.92px;top:619.48px" class="cls_013"><span class="cls_013">#</span></div>
+<div style="position:absolute;left:390.24px;top:630.52px" class="cls_013"><span class="cls_013">+</span></div>
+<div style="position:absolute;left:350.88px;top:636.04px" class="cls_013"><span class="cls_013">V</span></div>
+<div style="position:absolute;left:366.96px;top:657.88px" class="cls_013"><span class="cls_013">1)</span></div>
+<div style="position:absolute;left:338.88px;top:665.56px" class="cls_013"><span class="cls_013">l'</span></div>
+<div style="position:absolute;left:369.84px;top:666.28px" class="cls_013"><span class="cls_013">4,</span></div>
+<div style="position:absolute;left:342.48px;top:681.64px" class="cls_013"><span class="cls_013">%A</span></div>
+<div style="position:absolute;left:374.88px;top:682.60px" class="cls_013"><span class="cls_013">0</span></div>
+<div style="position:absolute;left:476.64px;top:685.96px" class="cls_013"><span class="cls_013">it</span></div>
+<div style="position:absolute;left:315.60px;top:693.56px" class="cls_038"><span class="cls_038">I</span></div>
+<div style="position:absolute;left:474.00px;top:702.28px" class="cls_040"><span class="cls_040">..\ .'.t</span></div>
+<div style="position:absolute;left:328.32px;top:741.52px" class="cls_041"><span class="cls_041">tot</span></div>
+<div style="position:absolute;left:444.48px;top:783.36px" class="cls_020"><span class="cls_020">z</span></div>
+<div style="position:absolute;left:241.92px;top:801.60px" class="cls_020"><span class="cls_020">C</span></div>
+<div style="position:absolute;left:256.56px;top:801.60px" class="cls_020"><span class="cls_020">;111</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-270px;top:7570px;width:540px;height:960px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:279.36px;top:77.20px" class="cls_036"><span class="cls_036">'</span></div>
+<div style="position:absolute;left:279.36px;top:77.20px" class="cls_036"><span class="cls_036">541</span></div>
+<div style="position:absolute;left:316.08px;top:65.92px" class="cls_036"><span class="cls_036">7 K Ina</span></div>
+<div style="position:absolute;left:280.08px;top:96.64px" class="cls_036"><span class="cls_036">01</span></div>
+<div style="position:absolute;left:316.80px;top:95.44px" class="cls_036"><span class="cls_036">1</span></div>
+<div style="position:absolute;left:316.80px;top:95.44px" class="cls_036"><span class="cls_036">L</span></div>
+<div style="position:absolute;left:322.80px;top:93.04px" class="cls_036"><span class="cls_036">IN 01 41</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:8540px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:525.60px;top:109.12px" class="cls_042"><span class="cls_042">A314ItgAPP</span></div>
+<div style="position:absolute;left:534.00px;top:176.12px" class="cls_043"><span class="cls_043">Tt APP 47Rf relEntth</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:9090px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:28.08px;top:19.08px" class="cls_044"><span class="cls_044">• baRliJ4kc147.</span></div>
+<div style="position:absolute;left:430.32px;top:181.96px" class="cls_014"><span class="cls_014">EitiEt6</span></div>
+<div style="position:absolute;left:412.56px;top:225.64px" class="cls_014"><span class="cls_014">AirAEMICI</span></div>
+<div style="position:absolute;left:606.72px;top:239.64px" class="cls_045"><span class="cls_045">grIZAPP</span></div>
+<div style="position:absolute;left:192.72px;top:269.80px" class="cls_013"><span class="cls_013">f</span></div>
+<div style="position:absolute;left:192.72px;top:269.80px" class="cls_013"><span class="cls_013">"</span></div>
+<div style="position:absolute;left:194.64px;top:269.80px" class="cls_013"><span class="cls_013">;</span></div>
+<div style="position:absolute;left:194.64px;top:269.80px" class="cls_013"><span class="cls_013">7</span></div>
+<div style="position:absolute;left:196.80px;top:269.80px" class="cls_013"><span class="cls_013">a 4 ; fE</span></div>
+<div style="position:absolute;left:796.56px;top:312.04px" class="cls_014"><span class="cls_014">theitslig</span></div>
+<div style="position:absolute;left:796.56px;top:421.72px" class="cls_046"><span class="cls_046">kt#.11EW</span></div>
+<div style="position:absolute;left:796.56px;top:477.92px" class="cls_017"><span class="cls_017">11,#.1Riffe,</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:9640px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:383.04px;top:94.76px" class="cls_019"><span class="cls_019">***00 tP511441.1'</span></div>
+<div style="position:absolute;left:468.48px;top:95.48px" class="cls_019"><span class="cls_019">4:21 PM</span></div>
+<div style="position:absolute;left:540.96px;top:96.20px" class="cls_019"><span class="cls_019">:t</span></div>
+<div style="position:absolute;left:550.56px;top:95.20px" class="cls_032"><span class="cls_032">22%</span></div>
+<div style="position:absolute;left:387.84px;top:109.72px" class="cls_014"><span class="cls_014">M</span></div>
+<div style="position:absolute;left:408.96px;top:109.72px" class="cls_014"><span class="cls_014">-1111</span></div>
+<div style="position:absolute;left:750.00px;top:189.84px" class="cls_020"><span class="cls_020">1</span></div>
+<div style="position:absolute;left:750.00px;top:189.84px" class="cls_020"><span class="cls_020">7</span></div>
+<div style="position:absolute;left:753.36px;top:189.84px" class="cls_020"><span class="cls_020">17</span></div>
+<div style="position:absolute;left:763.92px;top:189.84px" class="cls_020"><span class="cls_020">V</span></div>
+<div style="position:absolute;left:780.00px;top:189.84px" class="cls_020"><span class="cls_020">11</span></div>
+<div style="position:absolute;left:851.28px;top:180.56px" class="cls_009"><span class="cls_009">Jk</span></div>
+<div style="position:absolute;left:342.24px;top:365.96px" class="cls_011"><span class="cls_011">D</span></div>
+<div style="position:absolute;left:376.08px;top:365.96px" class="cls_011"><span class="cls_011">MTI</span></div>
+<div style="position:absolute;left:402.00px;top:365.96px" class="cls_011"><span class="cls_011">M</span></div>
+<div style="position:absolute;left:424.32px;top:358.96px" class="cls_011"><span class="cls_011">ENNI </span><span class="cls_041">nittrokmykm</span></div>
+<div style="position:absolute;left:342.24px;top:402.44px" class="cls_011"><span class="cls_011">• tA(80%)</span></div>
+<div style="position:absolute;left:484.08px;top:401.96px" class="cls_011"><span class="cls_011">•</span></div>
+<div style="position:absolute;left:520.56px;top:401.72px" class="cls_011"><span class="cls_011">120%)</span></div>
+<div style="position:absolute;left:361.92px;top:425.40px" class="cls_021"><span class="cls_021">1601</span></div>
+<div style="position:absolute;left:505.68px;top:425.40px" class="cls_021"><span class="cls_021">401'</span></div>
+<div style="position:absolute;left:328.32px;top:449.36px" class="cls_047"><span class="cls_047">-</span></div>
+<div style="position:absolute;left:387.12px;top:447.20px" class="cls_047"><span class="cls_047">•</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:10190px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:183.36px;top:55.80px" class="cls_015"><span class="cls_015">EFJ7=vi$0,4-</span></div>
+<div style="position:absolute;left:528.72px;top:55.80px" class="cls_015"><span class="cls_015">-KrAFRM3RM</span></div>
+<div style="position:absolute;left:617.28px;top:55.80px" class="cls_015"><span class="cls_015">-1#</span></div>
+<div style="position:absolute;left:655.20px;top:55.80px" class="cls_015"><span class="cls_015">.1\</span></div>
+<div style="position:absolute;left:18.24px;top:71.16px" class="cls_015"><span class="cls_015">trWZ=P</span></div>
+<div style="position:absolute;left:81.36px;top:71.16px" class="cls_015"><span class="cls_015">5=EX1aRtfq</span></div>
+<div style="position:absolute;left:440.40px;top:70.44px" class="cls_015"><span class="cls_015">I</span></div>
+<div style="position:absolute;left:441.60px;top:70.44px" class="cls_015"><span class="cls_015">M</span></div>
+<div style="position:absolute;left:465.60px;top:70.44px" class="cls_015"><span class="cls_015">AiRMTE/LATVI5  filn_EK343%</span></div>
+<div style="position:absolute;left:503.52px;top:86.04px" class="cls_015"><span class="cls_015">Rr*O.g.</span></div>
+<div style="position:absolute;left:430.56px;top:250.64px" class="cls_017"><span class="cls_017">Q1</span></div>
+<div style="position:absolute;left:508.32px;top:250.32px" class="cls_020"><span class="cls_020">VA'</span></div>
+<div style="position:absolute;left:314.64px;top:272.16px" class="cls_020"><span class="cls_020">N</span></div>
+<div style="position:absolute;left:322.32px;top:272.16px" class="cls_020"><span class="cls_020">4</span></div>
+<div style="position:absolute;left:330.72px;top:272.16px" class="cls_020"><span class="cls_020">5f</span></div>
+<div style="position:absolute;left:337.68px;top:272.16px" class="cls_020"><span class="cls_020">"</span></div>
+<div style="position:absolute;left:348.48px;top:272.16px" class="cls_020"><span class="cls_020">*  Sk.IP'</span></div>
+<div style="position:absolute;left:500.64px;top:271.44px" class="cls_020"><span class="cls_020">CFp</span></div>
+<div style="position:absolute;left:529.44px;top:271.44px" class="cls_020"><span class="cls_020">c</span></div>
+<div style="position:absolute;left:467.76px;top:269.28px" class="cls_020"><span class="cls_020">4</span></div>
+<div style="position:absolute;left:471.12px;top:269.28px" class="cls_020"><span class="cls_020">0</span></div>
+<div style="position:absolute;left:485.28px;top:269.28px" class="cls_020"><span class="cls_020">-</span></div>
+<div style="position:absolute;left:509.04px;top:269.28px" class="cls_020"><span class="cls_020">"r5a1</span></div>
+<div style="position:absolute;left:533.76px;top:275.76px" class="cls_020"><span class="cls_020">-I</span></div>
+<div style="position:absolute;left:509.04px;top:284.88px" class="cls_020"><span class="cls_020">%</span></div>
+<div style="position:absolute;left:516.24px;top:284.88px" class="cls_020"><span class="cls_020">(--</span></div>
+<div style="position:absolute;left:559.68px;top:294.72px" class="cls_020"><span class="cls_020">3k"</span></div>
+<div style="position:absolute;left:477.60px;top:299.52px" class="cls_020"><span class="cls_020">Qi</span></div>
+<div style="position:absolute;left:540.72px;top:302.40px" class="cls_020"><span class="cls_020">-.;1</span></div>
+<div style="position:absolute;left:385.44px;top:305.28px" class="cls_020"><span class="cls_020">'053f-.</span></div>
+<div style="position:absolute;left:370.08px;top:313.68px" class="cls_020"><span class="cls_020">41</span></div>
+<div style="position:absolute;left:376.32px;top:313.68px" class="cls_020"><span class="cls_020">0</span></div>
+<div style="position:absolute;left:386.16px;top:313.68px" class="cls_020"><span class="cls_020">—</span></div>
+<div style="position:absolute;left:402.48px;top:313.68px" class="cls_020"><span class="cls_020">14ak'0</span></div>
+<div style="position:absolute;left:509.04px;top:315.84px" class="cls_020"><span class="cls_020">' \</span></div>
+<div style="position:absolute;left:348.96px;top:322.80px" class="cls_020"><span class="cls_020">II</span></div>
+<div style="position:absolute;left:355.44px;top:322.80px" class="cls_020"><span class="cls_020">P</span></div>
+<div style="position:absolute;left:363.12px;top:322.80px" class="cls_020"><span class="cls_020">N</span></div>
+<div style="position:absolute;left:383.52px;top:322.80px" class="cls_020"><span class="cls_020">*</span></div>
+<div style="position:absolute;left:418.56px;top:322.80px" class="cls_020"><span class="cls_020">&lt;,</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:10740px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:28.08px;top:26.40px" class="cls_048"><span class="cls_048">fio</span></div>
+<div style="position:absolute;left:744.48px;top:50.00px" class="cls_009"><span class="cls_009">MITVIDIRMVfilVi4</span></div>
+<div style="position:absolute;left:786.48px;top:94.40px" class="cls_015"><span class="cls_015">so </span><span class="cls_009">TR3z07zuE</span></div>
+<div style="position:absolute;left:92.16px;top:135.08px" class="cls_019"><span class="cls_019">•••00 *•</span></div>
+<div style="position:absolute;left:186.96px;top:139.52px" class="cls_049"><span class="cls_049">4:21  P</span></div>
+<div style="position:absolute;left:208.80px;top:139.52px" class="cls_049"><span class="cls_049">M</span></div>
+<div style="position:absolute;left:278.40px;top:135.52px" class="cls_032"><span class="cls_032">2z iJ</span></div>
+<div style="position:absolute;left:584.16px;top:159.84px" class="cls_020"><span class="cls_020">.....5c</span></div>
+<div style="position:absolute;left:590.40px;top:157.92px" class="cls_020"><span class="cls_020">4"...ri•</span></div>
+<div style="position:absolute;left:84.96px;top:169.80px" class="cls_050"><span class="cls_050">IQ</span></div>
+<div style="position:absolute;left:103.92px;top:190.80px" class="cls_020"><span class="cls_020">2065</span></div>
+<div style="position:absolute;left:140.64px;top:185.80px" class="cls_014"><span class="cls_014">M`FIZTX*TEAVIEMA</span></div>
+<div style="position:absolute;left:451.92px;top:187.00px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:694.56px;top:200.00px" class="cls_049"><span class="cls_049">_•::-.</span></div>
+<div style="position:absolute;left:728.88px;top:200.72px" class="cls_049"><span class="cls_049">i!' '</span></div>
+<div style="position:absolute;left:565.92px;top:205.52px" class="cls_049"><span class="cls_049">di'rr'- '3'</span></div>
+<div style="position:absolute;left:681.84px;top:209.12px" class="cls_049"><span class="cls_049">,•-•,</span></div>
+<div style="position:absolute;left:551.04px;top:212.48px" class="cls_049"><span class="cls_049">4</span></div>
+<div style="position:absolute;left:556.80px;top:212.48px" class="cls_049"><span class="cls_049">Z</span></div>
+<div style="position:absolute;left:582.72px;top:215.36px" class="cls_049"><span class="cls_049">%</span></div>
+<div style="position:absolute;left:588.48px;top:215.36px" class="cls_049"><span class="cls_049">-..e.</span></div>
+<div style="position:absolute;left:599.52px;top:215.36px" class="cls_049"><span class="cls_049">-)-41</span></div>
+<div style="position:absolute;left:612.24px;top:215.36px" class="cls_049"><span class="cls_049">..‘</span></div>
+<div style="position:absolute;left:676.32px;top:213.20px" class="cls_049"><span class="cls_049">-,.. '.•</span></div>
+<div style="position:absolute;left:666.48px;top:220.40px" class="cls_049"><span class="cls_049">„--</span></div>
+<div style="position:absolute;left:684.72px;top:224.48px" class="cls_049"><span class="cls_049">.-9</span></div>
+<div style="position:absolute;left:577.20px;top:227.36px" class="cls_049"><span class="cls_049">•oNe-''''</span></div>
+<div style="position:absolute;left:657.36px;top:228.08px" class="cls_049"><span class="cls_049">"</span></div>
+<div style="position:absolute;left:614.40px;top:235.04px" class="cls_049"><span class="cls_049">„.;.:•••</span></div>
+<div style="position:absolute;left:636.96px;top:235.04px" class="cls_049"><span class="cls_049">1,...-7-</span></div>
+<div style="position:absolute;left:187.68px;top:237.88px" class="cls_032"><span class="cls_032">2017412,11 </span><span class="cls_014">301a</span></div>
+<div style="position:absolute;left:264.24px;top:240.88px" class="cls_032"><span class="cls_032">00:00</span></div>
+<div style="position:absolute;left:187.68px;top:267.52px" class="cls_032"><span class="cls_032">2017* un 3D 19</span></div>
+<div style="position:absolute;left:264.24px;top:267.52px" class="cls_032"><span class="cls_032">00:00</span></div>
+<div style="position:absolute;left:208.08px;top:292.96px" class="cls_032"><span class="cls_032">18:00 ff</span></div>
+<div style="position:absolute;left:247.44px;top:287.96px" class="cls_032"><span class="cls_032">07; </span><span class="cls_011">cico</span></div>
+<div style="position:absolute;left:232.08px;top:321.60px" class="cls_020"><span class="cls_020">(:61</span></div>
+<div style="position:absolute;left:247.44px;top:321.60px" class="cls_020"><span class="cls_020">°  Q  c1</span></div>
+<div style="position:absolute;left:660.00px;top:324.64px" class="cls_032"><span class="cls_032">(1)</span></div>
+<div style="position:absolute;left:675.60px;top:332.08px" class="cls_051"><span class="cls_051">•</span></div>
+<div style="position:absolute;left:680.40px;top:324.64px" class="cls_032"><span class="cls_032">,•&</span></div>
+<div style="position:absolute;left:665.04px;top:337.48px" class="cls_024"><span class="cls_024">el•;-</span></div>
+<div style="position:absolute;left:669.84px;top:331.88px" class="cls_027"><span class="cls_027">•,(4</span></div>
+<div style="position:absolute;left:676.32px;top:331.88px" class="cls_027"><span class="cls_027">.•</span></div>
+<div style="position:absolute;left:565.20px;top:364.56px" class="cls_020"><span class="cls_020">.1'.5" •</span></div>
+<div style="position:absolute;left:580.56px;top:372.24px" class="cls_037"><span class="cls_037">C) </span><span class="cls_020">...--,,.</span></div>
+<div style="position:absolute;left:661.44px;top:369.36px" class="cls_020"><span class="cls_020">..6-,..</span></div>
+<div style="position:absolute;left:536.40px;top:380.64px" class="cls_020"><span class="cls_020">-'-i-..,.</span></div>
+<div style="position:absolute;left:584.16px;top:382.08px" class="cls_020"><span class="cls_020">.1,</span></div>
+<div style="position:absolute;left:636.24px;top:383.52px" class="cls_020"><span class="cls_020">.-:.</span></div>
+<div style="position:absolute;left:502.56px;top:390.04px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:622.80px;top:391.20px" class="cls_020"><span class="cls_020">-*-'</span></div>
+<div style="position:absolute;left:629.76px;top:387.12px" class="cls_020"><span class="cls_020">.rk74-,</span></div>
+<div style="position:absolute;left:605.28px;top:401.76px" class="cls_020"><span class="cls_020">.14'.</span></div>
+<div style="position:absolute;left:289.68px;top:408.80px" class="cls_049"><span class="cls_049">OFF</span></div>
+<div style="position:absolute;left:591.84px;top:407.52px" class="cls_020"><span class="cls_020">40:'</span></div>
+<div style="position:absolute;left:631.92px;top:408.96px" class="cls_020"><span class="cls_020">.••.-</span></div>
+<div style="position:absolute;left:682.56px;top:434.88px" class="cls_020"><span class="cls_020">,•••_•■•</span></div>
+<div style="position:absolute;left:383.76px;top:467.84px" class="cls_009"><span class="cls_009">M$13=FXr</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:11290px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:741.60px;top:46.64px" class="cls_052"><span class="cls_052">•</span></div>
+<div style="position:absolute;left:84.96px;top:322.40px" class="cls_052"><span class="cls_052">e</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:11840px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:304.56px;top:121.88px" class="cls_033"><span class="cls_033">CliDngqing </span><span class="cls_019">chemical research monogernent system</span></div>
+<div style="position:absolute;left:604.08px;top:124.64px" class="cls_053"><span class="cls_053">MrkfiEfiIMINEtift</span></div>
+<div style="position:absolute;left:347.76px;top:175.64px" class="cls_019"><span class="cls_019">Z</span></div>
+<div style="position:absolute;left:605.04px;top:174.64px" class="cls_041"><span class="cls_041">TZEIF5IMITDRIZ''A  T</span></div>
+<div style="position:absolute;left:848.16px;top:174.88px" class="cls_041"><span class="cls_041">)</span></div>
+<div style="position:absolute;left:442.56px;top:220.32px" class="cls_020"><span class="cls_020">U</span></div>
+<div style="position:absolute;left:605.04px;top:203.20px" class="cls_041"><span class="cls_041">StiF5-"A</span></div>
+<div style="position:absolute;left:686.64px;top:202.96px" class="cls_041"><span class="cls_041">M</span></div>
+<div style="position:absolute;left:718.80px;top:202.24px" class="cls_041"><span class="cls_041">E J]KgtilE tki.</span></div>
+<div style="position:absolute;left:417.84px;top:331.84px" class="cls_041"><span class="cls_041">e</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:12390px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:29.04px;top:18.24px" class="cls_054"><span class="cls_054">• w, 11 uw</span></div>
+<div style="position:absolute;left:436.32px;top:134.96px" class="cls_049"><span class="cls_049">....... i. a</span></div>
+<div style="position:absolute;left:421.68px;top:146.96px" class="cls_055"><span class="cls_055">6.4</span></div>
+<div style="position:absolute;left:484.80px;top:142.16px" class="cls_056"><span class="cls_056">.4.</span></div>
+<div style="position:absolute;left:448.32px;top:152.72px" class="cls_056"><span class="cls_056">0 1</span></div>
+<div style="position:absolute;left:641.52px;top:144.88px" class="cls_041"><span class="cls_041">qfr',1ITagtEl-=r</span></div>
+<div style="position:absolute;left:803.76px;top:144.88px" class="cls_041"><span class="cls_041">1)t,P</span></div>
+<div style="position:absolute;left:625.20px;top:171.76px" class="cls_041"><span class="cls_041">B</span></div>
+<div style="position:absolute;left:657.60px;top:171.76px" class="cls_041"><span class="cls_041">rim i IfiOMEET.</span></div>
+<div style="position:absolute;left:84.48px;top:226.48px" class="cls_041"><span class="cls_041">ikMiII.PfigV3R , Ilili</span></div>
+<div style="position:absolute;left:85.20px;top:252.40px" class="cls_041"><span class="cls_041">i</span></div>
+<div style="position:absolute;left:150.48px;top:253.12px" class="cls_041"><span class="cls_041">r7t)01111</span></div>
+<div style="position:absolute;left:701.04px;top:321.52px" class="cls_041"><span class="cls_041">C.,g-*' I 4cNitiI)±,..</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:12940px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:810.96px;top:59.04px" class="cls_020"><span class="cls_020">.irs3.34</span></div>
+<div style="position:absolute;left:843.12px;top:58.80px" class="cls_020"><span class="cls_020">piEb gUit</span></div>
+<div style="position:absolute;left:454.56px;top:104.40px" class="cls_008"><span class="cls_008">„,y g Rossi"</span></div>
+<div style="position:absolute;left:681.36px;top:145.36px" class="cls_032"><span class="cls_032">or A</span></div>
+<div style="position:absolute;left:701.76px;top:145.36px" class="cls_032"><span class="cls_032">•</span></div>
+<div style="position:absolute;left:582.00px;top:197.56px" class="cls_033"><span class="cls_033">1,0•11</span></div>
+<div style="position:absolute;left:605.76px;top:196.84px" class="cls_033"><span class="cls_033">11.1F</span></div>
+<div style="position:absolute;left:493.92px;top:202.60px" class="cls_033"><span class="cls_033">arbitiglde</span></div>
+<div style="position:absolute;left:536.64px;top:199.48px" class="cls_033"><span class="cls_033">#01111.12</span></div>
+<div style="position:absolute;left:655.44px;top:221.40px" class="cls_021"><span class="cls_021">nag Go 0</span></div>
+<div style="position:absolute;left:488.16px;top:248.96px" class="cls_047"><span class="cls_047">:5144E4  igeKUTI</span></div>
+<div style="position:absolute;left:534.48px;top:248.96px" class="cls_047"><span class="cls_047">M</span></div>
+<div style="position:absolute;left:544.08px;top:248.96px" class="cls_047"><span class="cls_047">IIT</span></div>
+<div style="position:absolute;left:551.28px;top:248.96px" class="cls_047"><span class="cls_047">"</span></div>
+<div style="position:absolute;left:558.24px;top:248.96px" class="cls_047"><span class="cls_047">L</span></div>
+<div style="position:absolute;left:614.16px;top:244.64px" class="cls_047"><span class="cls_047">x1p4r.</span></div>
+<div style="position:absolute;left:656.16px;top:244.64px" class="cls_047"><span class="cls_047">ZIOSIF   irSet</span></div>
+<div style="position:absolute;left:701.04px;top:244.64px" class="cls_047"><span class="cls_047">Z</span></div>
+<div style="position:absolute;left:708.00px;top:244.64px" class="cls_047"><span class="cls_047">UFAID&</span></div>
+<div style="position:absolute;left:726.24px;top:244.64px" class="cls_047"><span class="cls_047">M</span></div>
+<div style="position:absolute;left:733.20px;top:244.64px" class="cls_047"><span class="cls_047">:9161A</span></div>
+<div style="position:absolute;left:505.68px;top:257.36px" class="cls_047"><span class="cls_047">ovre..1</span></div>
+<div style="position:absolute;left:521.04px;top:257.36px" class="cls_055"><span class="cls_055">03</span></div>
+<div style="position:absolute;left:664.56px;top:254.48px" class="cls_047"><span class="cls_047">atO</span></div>
+<div style="position:absolute;left:679.44px;top:254.48px" class="cls_047"><span class="cls_047">2CM11</span></div>
+<div style="position:absolute;left:703.20px;top:254.48px" class="cls_047"><span class="cls_047">3</span></div>
+<div style="position:absolute;left:493.92px;top:265.04px" class="cls_049"><span class="cls_049">W</span></div>
+<div style="position:absolute;left:502.32px;top:265.04px" class="cls_049"><span class="cls_049">:34116. </span><span class="cls_047">Algri.</span></div>
+<div style="position:absolute;left:544.32px;top:263.04px" class="cls_047"><span class="cls_047">9R.na </span><span class="cls_022">u•Bittf.</span></div>
+<div style="position:absolute;left:607.92px;top:263.04px" class="cls_022"><span class="cls_022">4i11121.</span></div>
+<div style="position:absolute;left:663.84px;top:262.88px" class="cls_047"><span class="cls_047">apz</span></div>
+<div style="position:absolute;left:675.84px;top:262.88px" class="cls_047"><span class="cls_047">• vityta</span></div>
+<div style="position:absolute;left:814.32px;top:262.88px" class="cls_049"><span class="cls_049">AfittEL</span></div>
+<div style="position:absolute;left:492.48px;top:270.00px" class="cls_022"><span class="cls_022">.!eir-rm</span></div>
+<div style="position:absolute;left:662.64px;top:271.28px" class="cls_049"><span class="cls_049">R.OR'71,Z</span></div>
+<div style="position:absolute;left:687.84px;top:271.28px" class="cls_049"><span class="cls_049">1</span></div>
+<div style="position:absolute;left:688.32px;top:271.28px" class="cls_049"><span class="cls_049">.”407Lt.  Za..R°4•117G1tql,/k.</span></div>
+<div style="position:absolute;left:483.36px;top:287.36px" class="cls_047"><span class="cls_047">IEBB</span></div>
+<div style="position:absolute;left:504.96px;top:287.36px" class="cls_047"><span class="cls_047">arkk.DA</span></div>
+<div style="position:absolute;left:526.08px;top:287.36px" class="cls_047"><span class="cls_047">M</span></div>
+<div style="position:absolute;left:532.08px;top:287.36px" class="cls_047"><span class="cls_047">M</span></div>
+<div style="position:absolute;left:538.32px;top:287.36px" class="cls_047"><span class="cls_047">UNAM</span></div>
+<div style="position:absolute;left:607.20px;top:287.36px" class="cls_059"><span class="cls_059">M779.6</span></div>
+<div style="position:absolute;left:652.08px;top:286.80px" class="cls_022"><span class="cls_022">MiliKIX : </span><span class="cls_058">ilut-IToPairwmvpilz</span></div>
+<div style="position:absolute;left:814.32px;top:286.80px" class="cls_058"><span class="cls_058">1X722%%</span></div>
+<div style="position:absolute;left:516.24px;top:296.48px" class="cls_055"><span class="cls_055">40.</span></div>
+<div style="position:absolute;left:651.36px;top:296.64px" class="cls_058"><span class="cls_058">C: rife- </span><span class="cls_022">2616.11 </span><span class="cls_058">22</span></div>
+<div style="position:absolute;left:488.16px;top:304.16px" class="cls_047"><span class="cls_047">a9E</span><span class="cls_055">'1e   ry A.D.R.X.</span></div>
+<div style="position:absolute;left:559.68px;top:306.08px" class="cls_049"><span class="cls_049">artrrE.</span></div>
+<div style="position:absolute;left:581.28px;top:306.32px" class="cls_049"><span class="cls_049">?</span></div>
+<div style="position:absolute;left:585.60px;top:306.32px" class="cls_049"><span class="cls_049">V</span></div>
+<div style="position:absolute;left:591.84px;top:306.32px" class="cls_049"><span class="cls_049">I•</span></div>
+<div style="position:absolute;left:603.84px;top:306.56px" class="cls_049"><span class="cls_049">EAISBN</span></div>
+<div style="position:absolute;left:640.80px;top:305.28px" class="cls_022"><span class="cls_022">ir</span></div>
+<div style="position:absolute;left:486.72px;top:308.64px" class="cls_022"><span class="cls_022">Amor. nmis• </span><span class="cls_047">#1,10741Alraut</span></div>
+<div style="position:absolute;left:649.92px;top:302.52px" class="cls_021"><span class="cls_021">9 wa : </span><span class="cls_022">4 TITS </span><span class="cls_047">AT:dtg</span></div>
+<div style="position:absolute;left:726.96px;top:307.44px" class="cls_047"><span class="cls_047">F! </span><span class="cls_058">m-.. 5.!. asieit . </span><span class="cls_022">t-Arlii!I. </span><span class="cls_058">.7.4/4ar_</span></div>
+<div style="position:absolute;left:658.32px;top:314.44px" class="cls_033"><span class="cls_033">dPitOtc.</span></div>
+<div style="position:absolute;left:688.32px;top:314.92px" class="cls_033"><span class="cls_033">Czlierr. gninniajx</span></div>
+<div style="position:absolute;left:751.44px;top:316.12px" class="cls_033"><span class="cls_033">.0_</span></div>
+<div style="position:absolute;left:421.68px;top:321.40px" class="cls_057"><span class="cls_057">• *ova</span></div>
+<div style="position:absolute;left:427.20px;top:331.96px" class="cls_033"><span class="cls_033">6•6271,</span></div>
+<div style="position:absolute;left:474.96px;top:330.24px" class="cls_022"><span class="cls_022">gir1,'+2 17,</span></div>
+<div style="position:absolute;left:426.00px;top:342.52px" class="cls_033"><span class="cls_033">saxt,</span></div>
+<div style="position:absolute;left:418.32px;top:351.84px" class="cls_022"><span class="cls_022">6 </span><span class="cls_033">EAR&</span></div>
+<div style="position:absolute;left:474.96px;top:349.64px" class="cls_027"><span class="cls_027">ma44-4Malm*Fukgm</span></div>
+<div style="position:absolute;left:645.12px;top:359.04px" class="cls_022"><span class="cls_022">/612gIS</span></div>
+<div style="position:absolute;left:673.68px;top:360.96px" class="cls_022"><span class="cls_022">#.5r2it244YEGL.71</span></div>
+<div style="position:absolute;left:726.96px;top:364.08px" class="cls_022"><span class="cls_022">.CcrE</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:13490px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:511.44px;top:0.00px" class="cls_061"><span class="cls_061">•</span></div>
+<div style="position:absolute;left:436.32px;top:77.80px" class="cls_046"><span class="cls_046">safprianirzetalimiaci</span></div>
+<div style="position:absolute;left:879.12px;top:81.08px" class="cls_027"><span class="cls_027">11434114</span></div>
+<div style="position:absolute;left:510.00px;top:103.36px" class="cls_032"><span class="cls_032">*PIP</span></div>
+<div style="position:absolute;left:545.28px;top:103.36px" class="cls_032"><span class="cls_032">*Rirokis</span></div>
+<div style="position:absolute;left:901.68px;top:101.20px" class="cls_032"><span class="cls_032">x</span></div>
+<div style="position:absolute;left:503.04px;top:114.12px" class="cls_015"><span class="cls_015">Lifii</span></div>
+<div style="position:absolute;left:535.68px;top:114.12px" class="cls_015"><span class="cls_015">)</span></div>
+<div style="position:absolute;left:540.96px;top:114.12px" class="cls_015"><span class="cls_015">=</span></div>
+<div style="position:absolute;left:571.92px;top:113.64px" class="cls_015"><span class="cls_015">}</span></div>
+<div style="position:absolute;left:692.16px;top:113.88px" class="cls_015"><span class="cls_015">IMIZZIZZEILIMEIDEM</span><span class="cls_022">Ilif rain</span></div>
+<div style="position:absolute;left:508.56px;top:135.40px" class="cls_046"><span class="cls_046">waft</span></div>
+<div style="position:absolute;left:510.00px;top:153.36px" class="cls_061"><span class="cls_061">V .7430—W</span></div>
+<div style="position:absolute;left:569.04px;top:153.36px" class="cls_061"><span class="cls_061">11711r4r</span></div>
+<div style="position:absolute;left:615.60px;top:153.36px" class="cls_061"><span class="cls_061">F1-)1EIR</span></div>
+<div style="position:absolute;left:508.56px;top:174.88px" class="cls_026"><span class="cls_026">1:1XreA</span></div>
+<div style="position:absolute;left:511.44px;top:189.84px" class="cls_062"><span class="cls_062">O -FtgdemmAri.5143tim</span></div>
+<div style="position:absolute;left:525.60px;top:203.76px" class="cls_061"><span class="cls_061">.tiMI.</span></div>
+<div style="position:absolute;left:581.04px;top:203.76px" class="cls_061"><span class="cls_061">Itutsm</span></div>
+<div style="position:absolute;left:543.12px;top:218.80px" class="cls_063"><span class="cls_063">❑</span><span class="cls_061">  Y.:f#.3k!T</span></div>
+<div style="position:absolute;left:702.72px;top:224.40px" class="cls_022"><span class="cls_022">_too</span></div>
+<div style="position:absolute;left:569.76px;top:234.72px" class="cls_061"><span class="cls_061">9311—id2.el9 Cf5</span></div>
+<div style="position:absolute;left:639.36px;top:240.72px" class="cls_022"><span class="cls_022">0627.docx</span></div>
+<div style="position:absolute;left:747.60px;top:242.16px" class="cls_022"><span class="cls_022">th!</span></div>
+<div style="position:absolute;left:740.64px;top:237.12px" class="cls_022"><span class="cls_022">2016/06/15</span></div>
+<div style="position:absolute;left:757.44px;top:240.44px" class="cls_022"><span class="cls_022">;h</span><span class="cls_027">:</span><span class="cls_020"><sup>:</sup></span></div>
+<div style="position:absolute;left:48.96px;top:235.24px" class="cls_060"><span class="cls_060">NIB Mill Ervii</span></div>
+<div style="position:absolute;left:522.00px;top:270.52px" class="cls_033"><span class="cls_033">&lt;  r</span></div>
+<div style="position:absolute;left:550.08px;top:272.24px" class="cls_049"><span class="cls_049">2</span></div>
+<div style="position:absolute;left:564.96px;top:264.24px" class="cls_061"><span class="cls_061">3</span></div>
+<div style="position:absolute;left:577.44px;top:272.24px" class="cls_049"><span class="cls_049">4</span></div>
+<div style="position:absolute;left:591.60px;top:272.24px" class="cls_049"><span class="cls_049">></span></div>
+<div style="position:absolute;left:602.16px;top:272.24px" class="cls_049"><span class="cls_049">>></span></div>
+<div style="position:absolute;left:621.84px;top:272.24px" class="cls_049"><span class="cls_049">*KM</span></div>
+<div style="position:absolute;left:848.88px;top:269.24px" class="cls_027"><span class="cls_027">tiTs1:490 • A02.514</span></div>
+<div style="position:absolute;left:756.72px;top:300.40px" class="cls_032"><span class="cls_032">•</span></div>
+<div style="position:absolute;left:698.40px;top:322.08px" class="cls_022"><span class="cls_022">JI</span></div>
+<div style="position:absolute;left:702.00px;top:322.08px" class="cls_022"><span class="cls_022">M</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:14040px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:48.72px;top:34.88px" class="cls_053"><span class="cls_053">PREIMIZINNIPIENE OPT8</span></div>
+<div style="position:absolute;left:804.96px;top:61.44px" class="cls_064"><span class="cls_064">1</span></div>
+<div style="position:absolute;left:822.00px;top:60.24px" class="cls_064"><span class="cls_064">4</span></div>
+<div style="position:absolute;left:246.00px;top:112.40px" class="cls_056"><span class="cls_056">TOCWINVOILIWO</span></div>
+<div style="position:absolute;left:742.56px;top:150.84px" class="cls_025"><span class="cls_025">11</span></div>
+<div style="position:absolute;left:744.00px;top:150.84px" class="cls_025"><span class="cls_025">1</span></div>
+<div style="position:absolute;left:753.12px;top:150.84px" class="cls_025"><span class="cls_025">:</span></div>
+<div style="position:absolute;left:757.92px;top:148.92px" class="cls_025"><span class="cls_025">4</span></div>
+<div style="position:absolute;left:775.44px;top:146.76px" class="cls_025"><span class="cls_025">t</span></div>
+<div style="position:absolute;left:682.08px;top:159.72px" class="cls_025"><span class="cls_025">i</span></div>
+<div style="position:absolute;left:689.28px;top:157.56px" class="cls_025"><span class="cls_025">74</span></div>
+<div style="position:absolute;left:696.24px;top:157.56px" class="cls_025"><span class="cls_025">/</span></div>
+<div style="position:absolute;left:706.80px;top:155.40px" class="cls_025"><span class="cls_025">V</span></div>
+<div style="position:absolute;left:724.32px;top:153.00px" class="cls_025"><span class="cls_025">W</span></div>
+<div style="position:absolute;left:606.96px;top:167.16px" class="cls_025"><span class="cls_025">W</span></div>
+<div style="position:absolute;left:624.96px;top:165.24px" class="cls_025"><span class="cls_025">&</span></div>
+<div style="position:absolute;left:637.92px;top:163.32px" class="cls_025"><span class="cls_025">SW</span></div>
+<div style="position:absolute;left:715.92px;top:164.92px" class="cls_033"><span class="cls_033">W</span></div>
+<div style="position:absolute;left:723.60px;top:153.16px" class="cls_033"><span class="cls_033">EEN40004 vdivNeenare Ostam,</span></div>
+<div style="position:absolute;left:564.96px;top:171.48px" class="cls_025"><span class="cls_025">W</span></div>
+<div style="position:absolute;left:585.36px;top:169.32px" class="cls_025"><span class="cls_025">W</span></div>
+<div style="position:absolute;left:657.60px;top:168.52px" class="cls_033"><span class="cls_033">istebrAcffs</span></div>
+<div style="position:absolute;left:592.32px;top:177.64px" class="cls_033"><span class="cls_033">•.cro</span></div>
+<div style="position:absolute;left:50.88px;top:317.04px" class="cls_064"><span class="cls_064">cEmsigfrgitT8</span></div>
+<div style="position:absolute;left:348.00px;top:338.04px" class="cls_021"><span class="cls_021">..e:0439</span></div>
+<div style="position:absolute;left:131.52px;top:369.12px" class="cls_064"><span class="cls_064">glEifff;)M</span></div>
+<div style="position:absolute;left:50.88px;top:394.32px" class="cls_064"><span class="cls_064">R</span></div>
+<div style="position:absolute;left:66.24px;top:394.32px" class="cls_064"><span class="cls_064">W</span></div>
+<div style="position:absolute;left:99.36px;top:394.32px" class="cls_064"><span class="cls_064">EEIM-, VAZIT</span></div>
+<div style="position:absolute;left:50.88px;top:419.52px" class="cls_064"><span class="cls_064">RtWEENttIP.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:14590px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:370.08px;top:48.40px" class="cls_065"><span class="cls_065">I VUAlets *4 tA</span></div>
+<div style="position:absolute;left:742.32px;top:193.04px" class="cls_005"><span class="cls_005">tegmtmmn</span></div>
+<div style="position:absolute;left:879.84px;top:193.04px" class="cls_005"><span class="cls_005">,ma</span></div>
+<div style="position:absolute;left:742.32px;top:214.16px" class="cls_005"><span class="cls_005">q/..%1nm,ammEgm</span></div>
+<div style="position:absolute;left:728.88px;top:235.28px" class="cls_005"><span class="cls_005">tmai3AgAIApIntilals</span></div>
+<div style="position:absolute;left:728.88px;top:263.40px" class="cls_015"><span class="cls_015">IMEN</span></div>
+<div style="position:absolute;left:821.52px;top:263.40px" class="cls_015"><span class="cls_015">fla</span></div>
+<div style="position:absolute;left:884.88px;top:263.40px" class="cls_015"><span class="cls_015">.%109</span></div>
+<div style="position:absolute;left:728.88px;top:284.52px" class="cls_015"><span class="cls_015">JIMP9EW5g1tQl.tAMIVI</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:15140px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:597.36px;top:37.44px" class="cls_002"><span class="cls_002">1^E1k</span></div>
+<div style="position:absolute;left:187.20px;top:61.36px" class="cls_032"><span class="cls_032">N1</span></div>
+<div style="position:absolute;left:199.20px;top:56.80px" class="cls_032"><span class="cls_032">\1 NV\</span></div>
+<div style="position:absolute;left:650.88px;top:173.20px" class="cls_032"><span class="cls_032">VZIA4k,"? N'ON. Vik.CSON.Tc</span></div>
+<div style="position:absolute;left:690.24px;top:190.40px" class="cls_017"><span class="cls_017">423±-1A..'h</span></div>
+<div style="position:absolute;left:377.28px;top:222.64px" class="cls_015"><span class="cls_015">W</span><span class="cls_016">x01.</span></div>
+<div style="position:absolute;left:386.40px;top:238.76px" class="cls_011"><span class="cls_011">VOA</span></div>
+<div style="position:absolute;left:391.20px;top:252.96px" class="cls_008"><span class="cls_008">Ves5.'4</span></div>
+<div style="position:absolute;left:877.68px;top:477.56px" class="cls_066"><span class="cls_066">j</span></div>
+<div style="position:absolute;left:905.76px;top:478.28px" class="cls_066"><span class="cls_066">tf</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:15690px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:784.08px;top:123.52px" class="cls_032"><span class="cls_032">'Th.talbtp,</span></div>
+<div style="position:absolute;left:732.48px;top:133.04px" class="cls_017"><span class="cls_017">j13...7.1A</span></div>
+<div style="position:absolute;left:570.48px;top:277.16px" class="cls_011"><span class="cls_011">:r3 50</span><span class="cls_016">.090</span><span class="cls_011">0;</span></div>
+<div style="position:absolute;left:498.00px;top:288.64px" class="cls_011"><span class="cls_011">1-zY1'.t_t-</span><span class="cls_016">S.</span><span class="cls_011">1</span></div>
+<div style="position:absolute;left:644.64px;top:322.32px" class="cls_022"><span class="cls_022">CI</span></div>
+<div style="position:absolute;left:654.48px;top:320.40px" class="cls_022"><span class="cls_022">A</span></div>
+<div style="position:absolute;left:726.00px;top:321.60px" class="cls_022"><span class="cls_022">W</span></div>
+<div style="position:absolute;left:734.64px;top:319.92px" class="cls_022"><span class="cls_022">itf.</span></div>
+<div style="position:absolute;left:611.52px;top:327.84px" class="cls_022"><span class="cls_022">1:6</span></div>
+<div style="position:absolute;left:622.08px;top:325.68px" class="cls_022"><span class="cls_022">V</span></div>
+<div style="position:absolute;left:632.40px;top:324.24px" class="cls_022"><span class="cls_022">O</span></div>
+<div style="position:absolute;left:717.12px;top:323.52px" class="cls_022"><span class="cls_022">e</span></div>
+<div style="position:absolute;left:566.40px;top:336.48px" class="cls_022"><span class="cls_022">0</span></div>
+<div style="position:absolute;left:510.72px;top:303.20px" class="cls_017"><span class="cls_017">%1,c1,110V iilErf0.31-10.t0M-</span></div>
+<div style="position:absolute;left:578.40px;top:334.08px" class="cls_022"><span class="cls_022">0</span></div>
+<div style="position:absolute;left:591.60px;top:328.80px" class="cls_022"><span class="cls_022">+;)) ,,</span></div>
+<div style="position:absolute;left:725.52px;top:335.28px" class="cls_022"><span class="cls_022">,</span></div>
+<div style="position:absolute;left:731.28px;top:334.32px" class="cls_022"><span class="cls_022">W</span></div>
+<div style="position:absolute;left:741.84px;top:331.20px" class="cls_022"><span class="cls_022">I.</span></div>
+<div style="position:absolute;left:532.56px;top:341.76px" class="cls_022"><span class="cls_022">1,1;</span></div>
+<div style="position:absolute;left:540.24px;top:341.76px" class="cls_022"><span class="cls_022">0</span></div>
+<div style="position:absolute;left:553.68px;top:338.40px" class="cls_022"><span class="cls_022">201</span></div>
+<div style="position:absolute;left:601.68px;top:344.88px" class="cls_022"><span class="cls_022">W</span></div>
+<div style="position:absolute;left:611.52px;top:343.20px" class="cls_022"><span class="cls_022">ite</span></div>
+<div style="position:absolute;left:617.04px;top:343.20px" class="cls_022"><span class="cls_022">N</span></div>
+<div style="position:absolute;left:629.76px;top:334.56px" class="cls_022"><span class="cls_022">Z11.1tik</span></div>
+<div style="position:absolute;left:516.96px;top:345.60px" class="cls_022"><span class="cls_022">'1</span></div>
+<div style="position:absolute;left:519.84px;top:345.12px" class="cls_022"><span class="cls_022">0</span></div>
+<div style="position:absolute;left:589.68px;top:347.28px" class="cls_022"><span class="cls_022">*</span></div>
+<div style="position:absolute;left:653.04px;top:349.44px" class="cls_022"><span class="cls_022">S</span></div>
+<div style="position:absolute;left:662.16px;top:347.76px" class="cls_022"><span class="cls_022">S</span></div>
+<div style="position:absolute;left:724.08px;top:344.88px" class="cls_067"><span class="cls_067">lk% </span><span class="cls_022"><sup>. Ili</sup></span></div>
+<div style="position:absolute;left:524.16px;top:359.28px" class="cls_022"><span class="cls_022">'W</span></div>
+<div style="position:absolute;left:533.28px;top:357.60px" class="cls_022"><span class="cls_022">S</span></div>
+<div style="position:absolute;left:553.68px;top:347.76px" class="cls_022"><span class="cls_022">11/4\ . Irt</span></div>
+<div style="position:absolute;left:644.40px;top:364.44px" class="cls_067"><span class="cls_067">0</span></div>
+<div style="position:absolute;left:657.12px;top:347.88px" class="cls_067"><span class="cls_067">-Vt . SVO-I</span></div>
+<div style="position:absolute;left:531.12px;top:369.00px" class="cls_067"><span class="cls_067">VS °</span></div>
+<div style="position:absolute;left:543.12px;top:349.92px" class="cls_067"><span class="cls_067">C.-ViAii-WC74 </span><span class="cls_022">, It la-141-1E</span></div>
+<div style="position:absolute;left:694.56px;top:355.08px" class="cls_021"><span class="cls_021">400 ,0000. ,</span></div>
+<div style="position:absolute;left:538.08px;top:385.80px" class="cls_067"><span class="cls_067">VI</span></div>
+<div style="position:absolute;left:545.28px;top:385.80px" class="cls_067"><span class="cls_067">N</span></div>
+<div style="position:absolute;left:558.72px;top:364.44px" class="cls_067"><span class="cls_067">OCIKEV&VY5 4001,1</span></div>
+<div style="position:absolute;left:612.24px;top:381.04px" class="cls_016"><span class="cls_016">W</span></div>
+<div style="position:absolute;left:634.56px;top:371.20px" class="cls_016"><span class="cls_016">el, . •,:</span><span class="cls_021">s_,.-i.</span></div>
+<div style="position:absolute;left:592.32px;top:383.20px" class="cls_016"><span class="cls_016">**</span></div>
+<div style="position:absolute;left:544.56px;top:387.04px" class="cls_016"><span class="cls_016">za.toicee</span></div>
+<div style="position:absolute;left:625.44px;top:387.48px" class="cls_016"><span class="cls_016">. </span><span class="cls_021">46-26Avt •</span></div>
+<div style="position:absolute;left:602.16px;top:400.00px" class="cls_016"><span class="cls_016">W</span></div>
+<div style="position:absolute;left:550.80px;top:402.88px" class="cls_016"><span class="cls_016">IMO:00</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:16240px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:738.72px;top:166.48px" class="cls_026"><span class="cls_026">1</span></div>
+<div style="position:absolute;left:750.96px;top:166.48px" class="cls_026"><span class="cls_026">8:</span></div>
+<div style="position:absolute;left:739.68px;top:178.76px" class="cls_027"><span class="cls_027">1577635517@qzcon</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:16790px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:469.44px;top:287.60px" class="cls_047"><span class="cls_047">7.</span></div>
+<div style="position:absolute;left:474.24px;top:294.56px" class="cls_047"><span class="cls_047">9.-7=72  '</span></div>
+<div style="position:absolute;left:501.60px;top:294.32px" class="cls_047"><span class="cls_047">‘'7.".1'•</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-480px;top:17340px;width:960px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:276.24px;top:171.96px" class="cls_068"><span class="cls_068">Thank You</span></div>
+<div style="position:absolute;left:341.04px;top:265.76px" class="cls_005"><span class="cls_005">SitIMNCI 4J114</span></div>
+<div style="position:absolute;left:516.96px;top:265.76px" class="cls_005"><span class="cls_005">PliZA*0</span></div>
+<div style="position:absolute;left:157.92px;top:476.32px" class="cls_032"><span class="cls_032">:</span></div>
+<div style="position:absolute;left:174.24px;top:476.32px" class="cls_032"><span class="cls_032">7C fz;A-</span></div>
+<div style="position:absolute;left:297.36px;top:464.44px" class="cls_013"><span class="cls_013">Fgit:</span></div>
+<div style="position:absolute;left:353.04px;top:464.44px" class="cls_013"><span class="cls_013">157-3070-2515</span></div>
+<div style="position:absolute;left:555.60px;top:465.88px" class="cls_013"><span class="cls_013">iliF g : </span><span class="cls_032"> echolee43</span></div>
+<div style="position:absolute;left:714.00px;top:474.88px" class="cls_032"><span class="cls_032">@</span></div>
+<div style="position:absolute;left:728.64px;top:474.16px" class="cls_032"><span class="cls_032">foxnnail.corn</span></div>
+</div>
+
+</body>
+</html>
